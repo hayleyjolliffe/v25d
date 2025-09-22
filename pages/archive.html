@@ -1,0 +1,34 @@
+---
+layout: page
+title: Archive, Hayley Jolliffe
+permalink: /archive
+---
+
+<r-cell span=4... span-s=row class="content">
+
+    <r-grid columns=4>
+
+        <r-cell span=2 span-s=row>
+
+            <h2>Archive</h2>
+
+        </r-cell>
+
+        <r-cell span=1+2 span-s=row>
+
+            <ul>
+                {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.permalink }}">
+                            <h3>{{ post.title }}</h3>
+                            <p>{{ post.excerpt }}</p>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </r-cell>
+
+    </r-grid>
+
+</r-cell>

@@ -1,0 +1,65 @@
+---
+layout: default
+title: Hayley Jolliffe
+description: Digital designer focused on building lean, intuitive, scalable systems and user-centered experiences.
+image: index-og
+---
+
+<r-cell span=3+2 span-s=row>
+    <h2 class="top">Work</h2>
+    <ul>
+        <!--
+        <li>
+            <a href="/adenosoft">
+                <h3>Adenosoft</h3>
+                <p>Reshaping the future of opinionated software</p>
+            </a>
+        </li>
+        -->
+        <li>
+            <a href="/dbs">
+                <h3>DBS</h3>
+                <p>Leading a full internal systems overhaul</p>
+            </a>
+        </li>
+        <li>
+            <a href="/sunday-setup">
+                <h3>Sunday Setup</h3>
+                <p>Transforming plaintext emails into a recognizable productivity name</p>
+            </a>
+        </li>
+        <li>
+            <a href="/enpowr">
+                <h3>ENPOWR</h3>
+                <p>Youth-centered endometriosis education</p>
+            </a>
+        </li>
+    </ul>
+</r-cell>
+
+<r-cell span=5+2 span-s=row>
+    <h2 class="top">Projects</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/hayleyjolliffe/obsidian-roadmap" target="_blank">
+                <h3>Obsidian Roadmap</h3>
+                <p>Roadmap vault template for Obsidian</p>
+            </a>
+        </li>
+    </ul>
+</r-cell>
+
+<r-cell span=7... span-s=row>
+    <h2 class="top">Logs</h2>
+    <ul>
+        {% for post in site.posts limit:5 %}
+            <li>
+                <a href="{{ post.permalink }}">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.excerpt }}</p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <p><a href="/archive">See all</a></p>
+</r-cell>

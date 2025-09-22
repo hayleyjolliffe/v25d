@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/raster.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+
+        <link rel="canonical" href="https://hayleyjolliffe.co">
+        <link rel="alternate" type="application/atom+xml" href="/feed.xml">
+
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+
+        <meta content="{{ page.description }}" name="description">
+        <meta content="{{ page.title }}" name="og:title">
+        <meta content="{{ page.title }}" name="og:site_name">
+        <meta content="{{ page.url }}" name="og:url">
+        <meta content="/assets/images/{{ page.image }}.webp" name="og:image">
+
+        <meta content="summary_large_image" name="twitter:card">
+        <meta content="{{ page.title }}" name="twitter:title">
+        <meta content="{{ page.description }}" name="twitter:description">
+        <meta content="/assets/images/{{ page.image }}.webp" name="twitter:image">
+    </head>
+    <body>
+
+        <r-grid columns=8 columns-s=2>
+
+            <r-cell span=2 span-s=row>
+                <h1><a href="/">Hayley Jolliffe</a></h1>
+                <p>Digital designer focused on building lean, intuitive, scalable systems and user-centered experiences. I thrive on simplifying complex challenges into clear, functional design solutions that balance craft and strategy.</p>
+                <ul class="links">
+                    <li><h2><a href="/info">Info</a></h2></li>
+                    <li><h2><a href="mailto:hayleyjolliffe@proton.me">Email</a></h2></li>
+                    <li><h2><a href="/feed.xml">RSS</a></h2></li>
+                    <li><h2><a href="https://literal.club/hayleyjolliffe" target="_blank">Literal</a></h2></li>
+                </ul>
+            </r-cell>
+
+            {{ content }}
+        
+        </r-grid>
+
+    </body>
+</html>

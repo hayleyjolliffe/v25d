@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<r-cell span=4... span-s=row class="content">
+
+    <r-grid columns=4>
+
+        <r-cell span=2 span-s=row>
+
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.date | date: "%-d %B %Y" }}&emsp;|&emsp;{{ page.read }} minute read</p>
+
+        </r-cell>
+
+        <r-cell span=1+3 span-s=row>
+
+            {{ content }}
+
+        </r-cell>
+    
+    </r-grid>
+
+</r-cell>
